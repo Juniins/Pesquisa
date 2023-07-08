@@ -7,11 +7,17 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+      
+    body {
+      height: 100vh;
+      overflow: hidden;
+    }    
 
     .audio-container {
       display: flex;
       align-items: center;
       font-family: 'Open Sans', sans-serif;
+      
     }
 
     .audio-container img {
@@ -37,6 +43,19 @@
       background: var(--plyr-audio-control-background-hover, var(--plyr-color-main, var(--plyr-color-main, #fff)));
       color: #ffffff;
       color: var(--plyr-audio-control-color-hover, #797979)
+    }
+
+    .plyr--audio .plyr__controls {
+    background: #fff;
+    background: var(--plyr-audio-controls-background, rgba(0, 0, 0, 0));
+    border-radius: inherit;
+    color: #4a5464;
+    color: var(--plyr-audio-control-color,#4a5464);
+    margin-left: 10px;
+}
+
+    .plyr--audio .plyr__control--overlaid .plyr__control__icon {
+      font-size: 33px;
     }
   </style>
 </head>
