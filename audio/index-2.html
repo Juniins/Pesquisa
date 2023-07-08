@@ -11,6 +11,7 @@
     body {
       height: 100vh;
       overflow: hidden;
+      margin: 0px;
     }    
 
     .audio-container {
@@ -38,15 +39,15 @@
 
     .plyr--audio .plyr__control.plyr__tab-focus,
     .plyr--audio .plyr__control:hover,
-    .plyr--audio .plyr__control[aria-expanded=true] {
-      background: #fff;
-      background: var(--plyr-audio-control-background-hover, var(--plyr-color-main, var(--plyr-color-main, #fff)));
-      color: #ffffff;
+    .plyr--audio .plyr__control[aria-expanded=false] {
+      background: rgba(0, 0, 0, 0);
+      background: var(--plyr-audio-control-background-hover, var(--plyr-color-main, var(--plyr-color-main, rgba(0, 0, 0, 0))));
+      color: rgba(0, 0, 0, 0);
       color: var(--plyr-audio-control-color-hover, #797979)
     }
 
     .plyr--audio .plyr__controls {
-    background: #fff;
+    background: rgba(0, 0, 0, 0);
     background: var(--plyr-audio-controls-background, rgba(0, 0, 0, 0));
     border-radius: inherit;
     color: #4a5464;
