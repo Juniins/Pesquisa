@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Reprodutor de Áudio com Plyr.js</title>
+  <link rel="stylesheet" href="https://cdn.plyr.io/3.6.7/plyr.css">
+  <style>
+    
+  </style>
+</head>
+<body>
+  <audio class="plyr" src="https://novoauxilio.com/eu%20sou%20especialista.mp3"></audio>
+  
+  <script src="https://cdn.plyr.io/3.6.7/plyr.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const player = new Plyr('.plyr', {
+        controls: ['play', 'progress', 'current-time', 'duration']
+      });
+    });
+  </script>
+</body>
+</html>
